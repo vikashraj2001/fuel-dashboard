@@ -1,0 +1,15 @@
+.container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 6px;
+  border-radius: 4px;
+}
