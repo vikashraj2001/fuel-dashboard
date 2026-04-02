@@ -1,16 +1,47 @@
-# React + Vite
+Fuel Price Dashboard 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend data visualization dashboard built as part of the SDE (Frontend) assignment.
+It visualizes the Retail Selling Price (RSP) of Petrol and Diesel across metro cities using interactive charts.
 
-Currently, two official plugins are available:
+Features
+Select Metro City, Fuel Type, and Year
+View monthly average fuel prices in a bar chart
+Built using Apache ECharts (without React wrapper)
+Handles real dataset with inconsistent formats
+Clean and modular code structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tech Stack
+React (JavaScript)
+Vite
+Apache ECharts
+PapaParse (for CSV parsing)
 
-## React Compiler
+Project Structure
+src/
+  components/
+    Filters.jsx
+    FuelChart.jsx
+  services/
+    api.js
+  utils/
+    formatData.js
+  App.jsx
+  main.jsx
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+public/
+  data/fuel.csv
 
-## Expanding the ESLint configuration
+Setup Instructions
+1. Clone the repository
+git clone <your-repo-link>
+cd fuel-dashboard
+2. Install dependencies
+npm install
+3. Run the project
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The app will run on:
+http://localhost:5173
+
+Live Demo vercel
+https://fuel-dashboard-ruddy.vercel.app/
